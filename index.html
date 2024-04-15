@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academicpal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Main Page -->
+    <div id="main-page" class="page">
+        <h1>Welcome to Academicpal</h1>
+        <p>Your one-stop shop for curated academic notes, study guides, and learning resources. Explore a variety of subjects and find the materials you need to excel in your studies.</p>
+        <button onclick="showBranches()">Explore Notes</button>
+      </div>
+      
+
+    <!-- Branches Page -->
+    <div id="branches-page" class="page hidden">
+      <h2>Choose Your Branch</h2>
+      <button class="branch-button" onclick="showCycles('CSE')">Computer Science & Engineering (FSD)</button>
+      <button class="branch-button" onclick="showCycles('AIML')">Artificial intelligence & Machine Learning  </button>
+      <button class="branch-button" onclick="showCycles('ECE')">Electronics & Communication Engineering</button>
+      <button class="branch-button" onclick="showCycles('AIDS')">Artificial intelligence & Data Science  </button>
+      <button class="branch-button" onclick="showCycles('Biotech')">Biotechnology</button>
+      <button class="branch-button" onclick="showCycles('civil')">Civil Engineering</button>
+      <button class="branch-button" onclick="showCycles('cce')">Computer commmunication Engineering</button>
+      <button class="branch-button" onclick="showCycles('EEE')">Electrical & Electronics Engineering </button>
+      <button class="branch-button" onclick="showCycles('ECE(VSLI)')">Electronics (VLSI Design & Technology)</button>
+      <button class="branch-button" onclick="showCycles('ise')">Info Science & Engineering</button>
+      <button class="branch-button" onclick="showCycles('Mech')">Mechanical Engineering</button>
+      <button class="branch-button" onclick="showCycles('Robotics')">Robotics and Artificial Intelligence</button>
+      <!-- Add buttons for other branches -->
+    </div>
+
+    <!-- Cycles Page -->
+    <div id="cycles-page" class="page hidden">
+      <h2>Choose Your Cycle</h2>
+      <button class="branch-button" onclick="showSubjects('Physics')">Physics Cycle</button>
+      <button class="branch-button" onclick="showSubjects('Chemistry')">Chemistry Cycle</button>
+      <!-- Add buttons for other cycles -->
+    </div>
+
+    <!-- Subjects Page -->
+    <div id="subjects-page" class="page hidden">
+      <h2>Choose Your Subject</h2>
+      <!-- Physics Cycle Subjects -->
+      <div id="physics-subjects" class="hidden">
+        <button class="branch-button" onclick="redirectToDrive('Physics')">Physics</button>
+        <button class="branch-button" onclick="redirectToDrive('Maths1')">Maths1</button>
+        <button class="branch-button" onclick="redirectToDrive('CPP')">C Programming</button>
+        <button class="branch-button" onclick="redirectToDrive('Physics')">ADLD</button>
+        <button class="branch-button" onclick="redirectToDrive('English')">English</button>
+        <button class="branch-button" onclick="redirectToDrive('BE')">Basic Electronics</button>
+        <button class="branch-button" onclick="redirectToDrive('Python')">Python</button>
+        <button class="branch-button" onclick="redirectToDrive('Civil')">Civil</button>
+        <button class="branch-button" onclick="redirectToDrive('Question papers')">Question papers</button>
+        <button class="branch-button" onclick="redirectToDrive('New physics')">New physics </button>
+      </div>
+
+      <!-- Chemistry Cycle Subjects -->
+      <div id="chemistry-subjects" class="hidden">
+        <button class="branch-button" onclick="redirectToDrive('Chemistry')">Chemistry</button>
+        <button class="branch-button" onclick="redirectToDrive('Maths')">Maths2</button>
+        <button class="branch-button" onclick="redirectToDrive('CPP')">C Programming</button>
+        <button class="branch-button" onclick="redirectToDrive('ADLD')">ADLD</button>
+        <button class="branch-button" onclick="redirectToDrive('BEE')">BEE</button>
+        <button class="branch-button" onclick="redirectToDrive('EV')">EV</button>
+        <button class="branch-button" onclick="redirectToDrive('BioEvs')">BioEvs</button>
+        <button class="branch-button" onclick="redirectToDrive('IT Skill')">IT Skill</button>
+      </div>
+      <!-- Add buttons for other subjects -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+  
+</body>
+</html>
