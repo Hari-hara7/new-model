@@ -87,3 +87,26 @@ function showBranches() {
     });
     document.getElementById('main-page').classList.remove('hidden');
   }
+
+
+
+  // Function to show loading overlay
+// Function to show loading overlay
+function showLoadingOverlay() {
+  document.getElementById('loading-overlay').style.display = 'block';
+}
+
+// Function to hide loading overlay
+function hideLoadingOverlay() {
+  document.getElementById('loading-overlay').style.display = 'none';
+}
+
+// Example: Add event listeners to show/hide loading overlay during page transitions
+document.addEventListener('DOMContentLoaded', function() {
+  showLoadingOverlay(); // Show loading overlay when the page is loaded
+  
+  // Example: Hide loading overlay after 3 seconds (simulating a page load)
+  setTimeout(function() {
+    hideLoadingOverlay();
+  }, 3000);
+});
